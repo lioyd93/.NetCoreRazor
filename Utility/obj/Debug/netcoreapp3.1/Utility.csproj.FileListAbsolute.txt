@@ -1,0 +1,9 @@
+C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\Utility\bin\Debug\netcoreapp3.1\Utility.deps.json
+C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\Utility\bin\Debug\netcoreapp3.1\Utility.dll
+C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\Utility\bin\Debug\netcoreapp3.1\Utility.pdb
+C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\Utility\obj\Debug\netcoreapp3.1\Utility.AssemblyInfoInputs.cache
+C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\Utility\obj\Debug\netcoreapp3.1\Utility.AssemblyInfo.cs
+C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\Utility\obj\Debug\netcoreapp3.1\Utility.csproj.CoreCompileInputs.cache
+C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\Utility\obj\Debug\netcoreapp3.1\Utility.dll
+C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\Utility\obj\Debug\netcoreapp3.1\Utility.pdb
+C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\Utility\obj\Debug\netcoreapp3.1\Utility.csprojAssemblyReference.cache
