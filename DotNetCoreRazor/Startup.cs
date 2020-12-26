@@ -8,6 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation;
 using DataAccess;
+using DataAccess.Data.Repository.IRepository;
+using DataAccess.Data.Repository;
 
 namespace DotNetCoreRazor
 {
@@ -26,12 +28,14 @@ namespace DotNetCoreRazor
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
-            
+            services.AddScoped<IUnitOfWork,UnitOfWork>();
             services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Latest);
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
+           
         }
         
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

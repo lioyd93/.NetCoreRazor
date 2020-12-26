@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Sk6dvxzP97X+v+jHhwG3sLkekGdtUhPYHxIb5JERRmF/5Jz1MyY1kA22/1kqF1nNF7eRlY9jedF5jivNztnpkQ==",
+  "dgSpecHash": "IRs7YAyt6hPbWgvyhNQsjuXJKQFDs2+Tb5q4q7NTs8ZFKSMOakUJoVrSjUpJQHZqG1uoHJRCwhZA4VBtr/TVYg==",
   "success": true,
   "projectFilePath": "C:\\Users\\46739\\Desktop\\.NetCoreRazor\\DotNetCoreRazor\\DotNetCoreRazor\\DotNetCoreRazor.csproj",
   "expectedPackageFiles": [
@@ -66,7 +66,7 @@
     "C:\\Users\\46739\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "C:\\Users\\46739\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\46739\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
-    "C:\\Users\\46739\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\46739\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\46739\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\46739\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\46739\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

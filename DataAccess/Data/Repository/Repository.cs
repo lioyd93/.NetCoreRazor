@@ -11,10 +11,10 @@ namespace DataAccess.Data.Repository
    public class Repository<T> : IRepository<T> where T : class
     {
 
-        protected readonly DbContext context;
+        protected readonly DbContext Context;
         internal DbSet<T> dbSet;
 
-        public Repository(DbContext Context)
+        public Repository(DbContext context)
         {
             Context = context;
             this.dbSet = context.Set<T>();
