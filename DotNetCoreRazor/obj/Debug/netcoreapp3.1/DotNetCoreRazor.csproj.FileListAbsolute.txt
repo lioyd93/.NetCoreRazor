@@ -389,3 +389,9 @@ C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DotNetCoreRazor\bin\Debug\n
 C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DotNetCoreRazor\bin\Debug\netcoreapp3.1\Model.pdb
 C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DotNetCoreRazor\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\Category\Index.cshtml.g.cs
 C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DotNetCoreRazor\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\Category\Upsert.cshtml.g.cs
+C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DotNetCoreRazor\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\FoodType\Index.cshtml.g.cs
+C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DotNetCoreRazor\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\FoodType\Upsert.cshtml.g.cs
+C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DotNetCoreRazor\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\MenuItem\Index.cshtml.g.cs
+C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DotNetCoreRazor\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DotNetCoreRazor\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DotNetCoreRazor\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\MenuItem\Upsert.cshtml.g.cs

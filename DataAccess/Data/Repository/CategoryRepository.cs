@@ -30,6 +30,7 @@ namespace DataAccess.Data.Repository
             var objFromDb = _db.Category.FirstOrDefault(s => s.Id == category.Id);
             objFromDb.Name = category.Name;
             objFromDb.DisplayOrder = category.DisplayOrder;
+            _db.SaveChanges();
         }
     }
 }
