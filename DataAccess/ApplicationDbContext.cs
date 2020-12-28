@@ -18,5 +18,6 @@ namespace DataAccess
         public DbSet<FoodType> FoodType { get; set; }
 
         public DbSet<MenuItem> MenuItem { get; set; }
+        public DbSet<ApplicationUser> ApplicationUser { get; set; }
     }
 }

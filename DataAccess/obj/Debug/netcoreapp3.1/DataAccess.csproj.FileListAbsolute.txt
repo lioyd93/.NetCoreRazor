@@ -96,9 +96,7 @@ C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DataAccess\bin\Debug\netcor
 C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DataAccess\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Configuration.Xml.dll
 C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DataAccess\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
 C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DataAccess\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
-C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DataAccess\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DataAccess\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Composite.dll
-C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DataAccess\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DataAccess\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DataAccess\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DataAccess\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.Abstractions.dll

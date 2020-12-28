@@ -9,10 +9,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using DotNetCoreRazor.Models.ViewModels;
+using Utility;
 
 namespace DotNetCoreRazor.Pages.Admin.MenuItem
 {
-   
+    [Authorize(Roles = SD.ManagerRole)]
     public class UpsertModel : PageModel
     {
         private readonly IUnitOfWork _unitOfWork;

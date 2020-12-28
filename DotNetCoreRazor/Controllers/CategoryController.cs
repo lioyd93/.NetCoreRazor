@@ -1,10 +1,13 @@
 ﻿using DataAccess.Data.Repository.IRepository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Utility;
 
 namespace DotNetCoreRazor.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

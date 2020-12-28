@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation;
 using DataAccess;
 using DataAccess.Data.Repository.IRepository;
 using DataAccess.Data.Repository;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Utility;
 
 namespace DotNetCoreRazor
 {
@@ -29,8 +31,12 @@ namespace DotNetCoreRazor
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddDefaultTokenProviders()
+                
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddSingleton<IEmailSender, EmailSender>();
 
             services.AddScoped<IUnitOfWork,UnitOfWork>();
             services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Latest);
