@@ -28,8 +28,16 @@
                                             <div class="col-6 text-right h4" style="color:maroon;"><b>@menuItem.Price</b></div>
                                         </div>
                                         <img src="@menuItem.Image" class="card-img-top p-2 rounded" />
+                                        @if (User.Identity.IsAuthenticated)
+                                        {
+                                            <a asp-page="Details" class="btn btn-primary" style="border-radius:2px;" asp-route-id="@menuItem.Id">Details</a>
 
-                                        <a asp-page="Details" class="btn btn-primary" style="border-radius:2px;" asp-route-id="@menuItem.Id">Details</a>
+                                        }
+                                        else
+                                        {
+                                            <a asp-area="Identity" asp-page="/Account/Login" class="btn btn-primary" style="border-radius:2px;" asp-route-id="@menuItem.Id">Details</a>
+
+                                        }
 
                                     </div>
                                 </div>
