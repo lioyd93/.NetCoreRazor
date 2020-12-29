@@ -12,6 +12,7 @@ using DataAccess.Data.Repository.IRepository;
 using DataAccess.Data.Repository;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Utility;
+using System;
 
 namespace DotNetCoreRazor
 {
@@ -39,6 +40,13 @@ namespace DotNetCoreRazor
             services.AddSingleton<IEmailSender, EmailSender>();
 
             services.AddScoped<IUnitOfWork,UnitOfWork>();
+
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(10);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
             services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Latest);
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
            
@@ -62,8 +70,8 @@ namespace DotNetCoreRazor
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
-            
 
+            app.UseSession();
             app.UseAuthentication();
             app.UseAuthorization();
 
