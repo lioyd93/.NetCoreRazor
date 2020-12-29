@@ -4,7 +4,7 @@ using Model;
 using System.Collections.Generic;
 
 
-namespace DotNetCoreRazor.Models.ViewModels
+namespace Models.ViewModel
 {
     public class MenuItemViewModel
     {

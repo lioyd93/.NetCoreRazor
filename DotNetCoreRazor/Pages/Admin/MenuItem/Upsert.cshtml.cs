@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using DotNetCoreRazor.Models.ViewModels;
+using Models.ViewModel;
 using Utility;
 
 namespace DotNetCoreRazor.Pages.Admin.MenuItem
