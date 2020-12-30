@@ -13,6 +13,7 @@ using DataAccess.Data.Repository;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Utility;
 using System;
+using Stripe;
 
 namespace DotNetCoreRazor
 {
@@ -47,6 +48,9 @@ namespace DotNetCoreRazor
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
             });
+
+            services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
+
             services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Latest);
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
            
@@ -76,6 +80,7 @@ namespace DotNetCoreRazor
             app.UseAuthorization();
 
             app.UseMvc();
+            StripeConfiguration.ApiKey = Configuration.GetSection("Stripe")["SecretKey"];
         }
     }
 }

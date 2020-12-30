@@ -23,6 +23,6 @@ namespace DataAccess
         public DbSet<ShoppingCart> ShoppingCart { get; set; }
 
         public DbSet<OrderDetails> OrderDetails { get; set; }
-        public DbSet<OrderHeader> OrderHeaders { get; set; }
+        public DbSet<OrderHeader> OrderHeader { get; set; }
     }
 }
