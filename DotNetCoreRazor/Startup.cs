@@ -53,7 +53,18 @@ namespace DotNetCoreRazor
 
             services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Latest);
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
-           
+
+            services.AddAuthentication().AddFacebook(facebookOptions =>
+            {
+                facebookOptions.AppId = "782603612327755";
+                facebookOptions.AppSecret = "a80a1b9bc5407716f5a46ae53a156bbd";
+            });
+            services.AddAuthentication().AddMicrosoftAccount(options =>
+            {
+                options.ClientId = "5313cebc-e108-4a50-ac26-39745dc21fb3";
+                options.ClientSecret = "_.o3VKFX_LR2Bs1J~QP~p9v0RI0FEc-I63";
+            });
+
         }
         
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -515,3 +515,5 @@ C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DotNetCoreRazor\obj\Debug\n
 C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DotNetCoreRazor\obj\Debug\netcoreapp3.1\Razor\Pages\Customer\Cart\Index.cshtml.g.cs
 C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DotNetCoreRazor\obj\Debug\netcoreapp3.1\Razor\Pages\Customer\Cart\OrderConfirmation.cshtml.g.cs
 C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DotNetCoreRazor\obj\Debug\netcoreapp3.1\Razor\Pages\Customer\Cart\Summary.cshtml.g.cs
+C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DotNetCoreRazor\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\Users\46739\Desktop\.NetCoreRazor\DotNetCoreRazor\DotNetCoreRazor\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll
