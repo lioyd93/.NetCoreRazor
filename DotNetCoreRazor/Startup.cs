@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Utility;
 using System;
 using Stripe;
+using DataAccess.Data.Initializer;
 
 namespace DotNetCoreRazor
 {
@@ -41,6 +42,7 @@ namespace DotNetCoreRazor
             services.AddSingleton<IEmailSender, EmailSender>();
 
             services.AddScoped<IUnitOfWork,UnitOfWork>();
+            services.AddScoped<IDbInitializer, DbInitializer>();
 
             services.AddSession(options =>
             {
@@ -68,7 +70,7 @@ namespace DotNetCoreRazor
         }
         
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IDbInitializer dbInitializer)
         {
             if (env.IsDevelopment())
             {
@@ -85,10 +87,11 @@ namespace DotNetCoreRazor
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
-
+            dbInitializer.Initialize();
             app.UseSession();
             app.UseAuthentication();
-            app.UseAuthorization();
+       
+
             app.UseRouting();
             app.UseEndpoints(endpoints =>
             {
