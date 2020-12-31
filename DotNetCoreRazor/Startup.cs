@@ -50,8 +50,8 @@ namespace DotNetCoreRazor
             });
 
             services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
-
-            services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Latest);
+            services.AddRazorPages();
+            //services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Latest);
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
             services.AddAuthentication().AddFacebook(facebookOptions =>
@@ -89,8 +89,14 @@ namespace DotNetCoreRazor
             app.UseSession();
             app.UseAuthentication();
             app.UseAuthorization();
+            app.UseRouting();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+                endpoints.MapRazorPages();
+            });
 
-            app.UseMvc();
+            //app.UseMvc();
             StripeConfiguration.ApiKey = Configuration.GetSection("Stripe")["SecretKey"];
         }
     }

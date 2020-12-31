@@ -1,6 +1,7 @@
 ﻿using DataAccess.Data.Repository.IRepository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Model;
 using Utility;
 
 namespace DotNetCoreRazor.Controllers
@@ -21,7 +22,7 @@ namespace DotNetCoreRazor.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            //return Json(new { data = _unitOfWork.SP_Call.ReturnList<Category>("usp_GetAllCategory", null) });
+           //return Json(new { data = _unitOfWork.SP_Call.ReturnList<Category>("Name", null) });
             return Json(new { data = _unitOfWork.Category.GetAll() });
         }
 
