@@ -63,8 +63,8 @@ namespace DotNetCoreRazor
             });
             services.AddAuthentication().AddMicrosoftAccount(options =>
             {
-                options.ClientId = "5313cebc-e108-4a50-ac26-39745dc21fb3";
-                options.ClientSecret = "_.o3VKFX_LR2Bs1J~QP~p9v0RI0FEc-I63";
+                options.ClientId = "Here you can add ClientId";
+                options.ClientSecret = "Here you can add ClientSecret";
             });
 
         }
