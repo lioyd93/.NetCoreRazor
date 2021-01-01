@@ -16,7 +16,7 @@ namespace Model
         public string Name { get; set; }
 
         [Required]
-        [Display(Name = "Category Order")]
+        [Display(Name = "Display Order")]
         public int DisplayOrder{ get; set; }
     }
 }

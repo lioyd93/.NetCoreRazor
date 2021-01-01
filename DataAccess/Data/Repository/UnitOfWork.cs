@@ -19,7 +19,7 @@ namespace DataAccess.Data.Repository
             ApplicationUser = new ApplicationUserRepository(_db);
             ShoppingCart = new ShoppingCartRepository(_db);
             OrderHeader = new OrderHeaderRepository(_db);
-           OrderDetails = new OrderDetailsRepository(_db);
+            OrderDetails = new OrderDetailsRepository(_db);
             SP_Call = new SP_Call(_db);
         }
 
@@ -29,7 +29,7 @@ namespace DataAccess.Data.Repository
         public IApplicationUserRepository ApplicationUser { get; private set; }
         public IShoppingCartRepository ShoppingCart { get; private set; }
         public IOrderDetailsRepository OrderDetails { get; private set; }
-       public IOrderHeaderRepository OrderHeader { get; private set; }
+        public IOrderHeaderRepository OrderHeader { get; private set; }
 
         public ISP_Call SP_Call { get; private set; }
         public void Dispose()
