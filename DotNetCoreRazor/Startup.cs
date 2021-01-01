@@ -58,8 +58,8 @@ namespace DotNetCoreRazor
 
             services.AddAuthentication().AddFacebook(facebookOptions =>
             {
-                facebookOptions.AppId = "782603612327755";
-                facebookOptions.AppSecret = "a80a1b9bc5407716f5a46ae53a156bbd";
+                facebookOptions.AppId = "Here you can add AppId";
+                facebookOptions.AppSecret = "Here you can add AppSecret";
             });
             services.AddAuthentication().AddMicrosoftAccount(options =>
             {
